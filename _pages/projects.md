@@ -13,7 +13,7 @@ Based on the fact that 71% of wildfires in the past 10 years were caused by huma
 ### Pipeline
 
 <p>
-  <img src="/images/4ch_image.png" alt="4-channel image" style="max-width: 360px; margin-right: 12px;">
+  <img src="/images/4ch_image.png" alt="4-channel image" style="max-width: 360px; height: 240px; margin-right: 12px;">
 </p>
 
 1. Collect Sentinel-2 imagery for the target region.
@@ -26,7 +26,7 @@ Based on the fact that 71% of wildfires in the past 10 years were caused by huma
 ### Inference
 
 <p>
-  <img src="/images/fire_heatmap.png" alt="Fire Heatmap" style="max-width: 360px; margin-right: 12px;">
+  <img src="/images/fire_heatmap.png" alt="Fire Heatmap" style="max-width: 360px; height: 240px; margin-right: 12px;">
 </p>
 
 - Generated a heatmap from the model’s predictions.
@@ -36,7 +36,7 @@ Based on the fact that 71% of wildfires in the past 10 years were caused by huma
 <p>
   <img src="/images/confusion_matrix.png"
        alt="Confusion Matrix"
-       style="max-width: 420px; border: 0; box-shadow: none;">
+       style="max-width: 360px; height: 240px; border: 0; box-shadow: none;">
 </p>
 
 - Achieved a recall of **76.8%** at a decision threshold of **0.9**.
