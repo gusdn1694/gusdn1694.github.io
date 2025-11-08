@@ -5,41 +5,33 @@ layout: single
 author_profile: true
 ---
 ## Human-Factor-Based Wildfire Risk Prediction Model
-**Period:** Mar 2025 – Present  
-**Advisor:** [Prof. Shin-Hoo Kang](https://shinhookang.github.io/)  
-**Affiliation:** Dept. of Computer Convergence Software, Korea University Sejong Campus
+**Period:** Mar 2025 – Jun 2025  
 
 ### Overview
-This project aims to predict wildfire-prone areas in the Gangwon/Chuncheon region by combining Sentinel-2 satellite imagery with human-activity-related information (residential-area shapefiles). Unlike approaches that rely only on meteorological or topographical factors, this work focuses on incorporating **human factors** to better reflect real-world fire occurrences in populated areas.
+Based on the fact that 71% of wildfires in the past 10 years were caused by human factors, this project aims to predict high-risk areas by training a CNN on fused data from satellite imagery and local residential (house-location) information.
 
-### Objectives
-- Build a **4-channel input dataset** by merging Sentinel-2 RGB (4-3-2) imagery with a residential-area mask.
-- Automate **sliding-window patch generation and labeling** based on historical fire occurrence points.
-- Train a CNN-based binary classifier to distinguish “high-risk” vs. “non-risk” patches.
-- Reconstruct patch-level predictions into a **risk heatmap** for visualization on a map.
-
-### Data Pipeline
+### Pipeline
 1. Collect Sentinel-2 imagery for the target region.
-2. Load and rasterize the residential (housing) shapefile.
+2. Load and rasterize the residential (housing) shapefile
 3. Stack the rasterized mask with the original imagery to form 4-channel images.
-4. Generate sliding-window patches (e.g., 64×64).
+4. Generate sliding-window patches (64×64).
 5. Split patches into positive/negative using historical wildfire coordinates.
-6. Apply basic augmentations (rotation, flip) and split into train/val sets.
+6. Train the CNN on the labeled pathces and run inference to produce riks predictions.
 
-### Tech Stack
-- **Python**, **TensorFlow/Keras** (or PyTorch)
-- **geemap / Google Earth Engine** for remote-sensing data
-- **NumPy, rasterio/GDAL** for image/mask processing
-- Visualization with confusion matrix / PR curve
+### Inference
+<p>
+  <img src="/images/fire_heatmap.png" alt="Fire Heatmap" style="max-width: 360px; margin-right: 12px;">
+</p>
 
-### Current Status
-- 1st version of 4-channel dataset (Sentinel-2 + residential mask) generated
-- Patch-generation and positive/negative separation scripts implemented
-- Baseline CNN training in progress
-- Investigating class imbalance and positive-bias from overlapping patches
+- Generated a heatmap from the model’s predictions.
 
-### Next Steps
-- Integrate human factors with environmental variables for better feature sets
-- Explore **domain adaptation** to transfer models across regions
-- Prepare a write-up/report for later publication
+### Recall / Confusion matrix
+<p>
+  <img src="/images/confusion_matrix.png" alt="Confusion Matrix" style="max-width: 360px; margin-right: 12px;">
+</p>
 
+- Achieved a recall of **76.8%** at a decision threshold of **0.9**.
+
+### Planning
+- Integrate additional human factors with environmental variables for better feature sets.
+- Apply **domain adaptation** techniques to mitigate positive bias caused by data scarcity.
