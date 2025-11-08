@@ -2,10 +2,8 @@
 title: "Projects"
 permalink: /projects/
 layout: single
-author_profile: false
+author_profile: true
 ---
-# Projects
-
 ## Human-Factor-Based Wildfire Risk Prediction Model
 **Period:** Mar 2025 – Present  
 **Advisor:** [Prof. Shin-Hoo Kang](https://shinhookang.github.io/)  
