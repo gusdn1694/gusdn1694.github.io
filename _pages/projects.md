@@ -4,13 +4,6 @@ permalink: /projects/
 layout: single
 author_profile: false
 ---
----
-title: "Projects"
-permalink: /projects/
-layout: single
-author_profile: false
----
-
 # Projects
 
 ## Human-Factor-Based Wildfire Risk Prediction Model
