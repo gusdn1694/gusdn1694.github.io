@@ -11,6 +11,10 @@ author_profile: true
 Based on the fact that 71% of wildfires in the past 10 years were caused by human factors, this project aims to predict high-risk areas by training a CNN on fused data from satellite imagery and local residential (house-location) information.
 
 ### Pipeline
+<p>
+  <img src="/images/4ch_image.png" alt="4-channel image" style="max-width: 360px; margin-right: 12px;">
+</p>
+
 1. Collect Sentinel-2 imagery for the target region.
 2. Load and rasterize the residential (housing) shapefile
 3. Stack the rasterized mask with the original imagery to form 4-channel images.
