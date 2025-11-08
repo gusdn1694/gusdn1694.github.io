@@ -25,7 +25,8 @@ author:
   # Biographic information
   avatar           : "profile.jpg"
   name             : "Hyunwoo Lee"
-  bio              : | "Undergraduate Student in 
+  bio              : | 
+                        "Undergraduate Student in 
                         Korea University Sejong Campus"
   gitbut           :
   location         : "South Korea"
