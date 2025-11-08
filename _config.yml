@@ -25,11 +25,8 @@ author:
   # Biographic information
   avatar           : "profile.png"
   name             : "Hyunwoo Lee"
-  pronouns         : # example: "she/her"  
   bio              : "Undergraduate Student in Korea University Sejong Campus"
   location         : "South Korea"
-  employer         : "Red Brick University"
-  uri              : # URL
   email            : "gusdn1694@gmail.com" 
 
   # Academic websites
