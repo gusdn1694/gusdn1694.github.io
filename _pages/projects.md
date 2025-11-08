@@ -34,7 +34,9 @@ Based on the fact that 71% of wildfires in the past 10 years were caused by huma
 ### Recall / Confusion matrix
 
 <p>
-  <img src="/images/confusion_matrix.png" alt="Confusion Matrix" max-width: 360px; margin-right: 12px;">
+  <img src="/images/confusion_matrix.png"
+       alt="Confusion Matrix"
+       style="max-width: 420px; border: 0; box-shadow: none;">
 </p>
 
 - Achieved a recall of **76.8%** at a decision threshold of **0.9**.
