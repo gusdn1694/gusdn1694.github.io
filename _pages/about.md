@@ -12,4 +12,7 @@ Welcome! I am Undergraduate student in Korea University Sejong Campus. My major 
 
 Nowadays, I'm doing....
 ======
-
+- **Sep.2025** Preparing for SoP, IoR, GRE 
+- **Jul.2025** Deciding to go to graduate 
+- **May.2025** My first research acitivity for conducting Human-factor-based Wildfire Risk Prediction!
+- **Dec.2024** Preparing for TOEFL
