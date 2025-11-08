@@ -17,6 +17,6 @@ Nowadays, I'm doing....
 - **Jul. 2025**  
   Decided to pursue graduate studies.
 - **May. 2025**  
-  Started my first research activity on human-factor-based wildfire risk prediction.
+  Conducted my first research activity on human-factor-based wildfire risk prediction.
 - **Dec. 2024**  
   Preparing for TOEFL.
